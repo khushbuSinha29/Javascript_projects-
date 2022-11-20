@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to right, rgb(101, 101, 243), rgb(160, 239, 160));
+}
+
+h1{
+    text-align: center;
+    color: rgb(240, 235, 235);
+    /* line-height: ; */
+    margin-top: 30px;
+}
+
+.main-container{
+    margin: 40px auto;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-input{
+    width: 97%;
+    height: 54px;
+    margin: 0 auto;
+    padding: 0 15px;
+    direction: rtl;
+    font-size: 20px;
+    font-weight: 300;
+    
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4px;
+  
+}
+
+.button-clear {
+    grid-column: 1/3;
+}
+
+.button{
+    /* width: 90%; */
+    cursor: pointer;
+    height: 52px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    background-color: rgb(228, 225, 225);
+}
+
+.button:hover{
+    background-color: white;
+}
+
+.button-c{
+    background-color: rgb(229, 66, 66);
+}
+
+.button-equal{
+    background-color: rgb(69, 145, 69);
+
+}
+
+.output{
+    grid-column: 1/-1;
+    background-color: rgba(56, 53, 53, 0.658);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 58px;
+}
+
+.output .previous-output{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.output .current-output{
+    color: white;
+    font-size:2rem ;
+}
+

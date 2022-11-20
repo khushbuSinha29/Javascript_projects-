@@ -52,7 +52,7 @@ const randomBtn = document.querySelector('.random-btn');
 // set starting item
 let currentItem = 0;
 
-// load initial item 
+// load initial item  
 
 window.addEventListener('DOMContentLoaded', function(){
   // console.log('The content is loaded');
