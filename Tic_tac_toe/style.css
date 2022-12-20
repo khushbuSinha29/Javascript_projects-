@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+nav{
+    height: 4rem;
+    background-color: rgb(249, 240, 198);
+    font-size: 3rem;
+    font-family: 'Nerko One', cursive;
+    text-align: center;
+    color: rgb(75, 73, 73);
+}
+/* 
+nav ul{
+    list-style-type: none;
+} */
+
+body{
+    background-color: #FEFCF3;;
+}
+
+.main-container{
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FEFCF3; */
+    height: 100vh;
+    width: 100vw;
+   
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* align-items: center; */
+}
+
+.game-container{
+    /* background-color: #F5EBE0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px; */
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3,10vw);
+    /* border: 2px solid black; */
+    position: relative;
+}
+
+.box{
+    /* background-color: #DBA39A;
+    height: 8rem;
+    width: 8rem; */
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vw;
+}
+
+.box:hover{
+    background-color: rgb(222, 217, 217);
+    color: black;
+}
+
+.gameText{
+    /* padding: 20px; */
+    margin-left: 30px;
+    /* background-color:yellow ; */
+
+}
+.welcomemsg{
+    font-size: 4vw;
+}
+.gameText p {
+    font-size: 3vw;
+    margin-top: 10px;
+}
+
+.gameText button{
+    margin-top: 10px;
+    font-size: 2.5vw;
+    padding: 8px;
+    background-color: rgb(74, 71, 71);
+    border: none;
+    color: rgb(240, 240, 240);
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.line{
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background-color: red;
+    transition: width 1s ease-in-out;
+    /* margin: 5px; */
+    /* transform: translate(0vw, 15vw) rotate(135deg); */
+}
+
+.line-hide{
+    opacity: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
