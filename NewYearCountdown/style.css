@@ -1,0 +1,75 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  /* position: relative; */
+background: url('bg3.jpg') no-repeat center center/cover;
+color: white;
+}
+/* For adding background image with opacity */
+/* body::before{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('bg3.jpg') no-repeat center center/cover;
+     opacity: 0.6;
+    position: absolute;
+    z-index: -1;
+}  */
+
+h1{
+    /* position: relative; */
+/* color: white; */
+font-weight: 600;
+font-size: 48px;
+text-align: center;
+margin-top: 50px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 30px; */
+    height: 80vh;
+}
+
+.time-container{
+    display: grid;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; no effect */ 
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 25px;
+    column-gap: 20px;
+    font-size: 32px;
+    font-weight: 500;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.numbers{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.time-container.hidden{
+    display: none;
+}
+
+.message{
+    font-size: 68px;
+    /* width: 300px; */
+    color: white;
+    display: none;
+    /* transition: font-size 2s ease-in; */
+}
+
+.message.msg-show{
+    font-size: 68px;
+    display: block;
+    /* transition: font-size 2s ease-in; */
+}
